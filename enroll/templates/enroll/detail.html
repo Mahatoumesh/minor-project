@@ -1,0 +1,31 @@
+{% extends 'enroll/base.html' %}
+{% load static %}
+{% block content %}
+    
+<img src="{% static 'images/images.jpg' %}">
+         
+    <header>
+        <div class="image">
+        
+</div>
+<section class="function">
+    <ul>
+        <a href="{% url 'student' %}"><img src="{% static 'images/details.jpg' %}" alt=""><input type="buttom" value="Student detail"></a>
+        <a href=""><img src="{% static 'images/face.jpg' %}"><input type="buttom" value="Face recognition"></a>
+        <a href=""><img src="{% static 'images/att.jpg' %}" alt=""><input type="buttom" value="Attendance"></a>
+        <a href=""><img src="{% static 'images/images.jpg' %}" alt=""><input type="buttom" value="Help"></a>
+
+    </ul>
+</section>
+<section class="function1">
+    <ul>
+        <a href=""><img src="{% static 'images/train.jpg' %}" alt=""><input type="buttom" value="Train Data"></a>
+        <a href=""><img src="{% static 'images/photo.jpg' %}" alt=""><input type="buttom" value="Photo"></a>
+
+        <a href=""><img src="{% static 'images/dev.jpg' %}" alt=""><input type="buttom" value="Developer"></a>
+
+        <a href=""><img src="{% static 'images/images.jpg' %}"  alt=""><input type="buttom" value="Exit"></a>
+    </ul>  
+</section>
+    </header>
+{% endblock content %}
