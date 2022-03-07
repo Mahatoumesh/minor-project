@@ -1,31 +1,109 @@
-{% extends 'enroll/base.html' %}
 {% load static %}
-{% block content %}
-    
-<img src="{% static 'images/images.jpg' %}">
-         
-    <header>
-        <div class="image">
-        
-</div>
-<section class="function">
-    <ul>
-        <a href="{% url 'student' %}"><img src="{% static 'images/details.jpg' %}" alt=""><input type="buttom" value="Student detail"></a>
-        <a href=""><img src="{% static 'images/face.jpg' %}"><input type="buttom" value="Face recognition"></a>
-        <a href=""><img src="{% static 'images/att.jpg' %}" alt=""><input type="buttom" value="Attendance"></a>
-        <a href=""><img src="{% static 'images/images.jpg' %}" alt=""><input type="buttom" value="Help"></a>
-
-    </ul>
-</section>
-<section class="function1">
-    <ul>
-        <a href=""><img src="{% static 'images/train.jpg' %}" alt=""><input type="buttom" value="Train Data"></a>
-        <a href=""><img src="{% static 'images/photo.jpg' %}" alt=""><input type="buttom" value="Photo"></a>
-
-        <a href=""><img src="{% static 'images/dev.jpg' %}" alt=""><input type="buttom" value="Developer"></a>
-
-        <a href=""><img src="{% static 'images/images.jpg' %}"  alt=""><input type="buttom" value="Exit"></a>
-    </ul>  
-</section>
-    </header>
-{% endblock content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    <title>Student Details</title>
+</head>
+<body>
+    <div class="student">
+<!--     <img src="img/images (2).jpg" alt="">
+ -->
+    <a href="Home.html">Home</a>
+   
+    <form class="Menu">
+        <h1>Current Course Information</h1>
+        <table>
+            <tr>
+                <td>Department:</td>
+                <td><input type="text" class="name" placeholder="Enter Fullname"></td>
+            </tr>
+            <tr>
+                <td>Courses:</td>
+                <td>
+                    <select>
+                       <option>Computer</option>
+                       <option>Electrical</option>
+                       <option>Mechanical</option>
+                       <option>Civil</option>
+                       <option>Electronics</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Years:</td>
+                <td>
+                    <input type="date" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Semester:
+                </td>
+                <td>
+                <select>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </td>
+                </select>
+            </tr>
+        </table>
+        <h1>Student class Information</h1>
+        <form class="Menu2">
+            <table>
+                <tr>
+                    <td>Student Name:</td>
+                    <td><input type="text" placeholder="Enter Name"></td>
+                </tr>
+                <tr>
+                    <td> StudentID No:</td>
+                    <td><input type="number" placeholder="Enter id number"></td>
+                </tr>
+                <td>Roll No:</td>
+                <td><input type="text" placeholder="Enter roll no."></td>
+                <tr>
+                    <td>class Division:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td> Gender:</td>
+                    <td><select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" placeholder="..........F@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td>Phone No:</td>
+                    <td><input type="number" placeholder="Enter Phonenumber"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" placeholder="Enter address"></td>
+                </tr>
+            </table>
+       <div class="btn">
+        <button class="save" >Save</button>
+    </div>
+    </form>
+        </form>
+    </div>
+</body>
+</html>

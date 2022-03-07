@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Home Page</title>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ </head>
+ <body>
+     <div class="image1">
+         <img src="{% static 'images/images.jpg' %}">
+     </div>
+     <section class="function">
+         <ul>
+              <a href="student.html"><img src="{% static 'images/details.jpg' %}" alt=""><input type="buttom" value="Student detail"></a>
+             <a href=""><img src="{% static 'images/face.jpg' %}"><input type="buttom" value="Face recognition"></a>
+             <a href=""><img src="{% static 'images/att.jpg' %}" alt=""><input type="buttom" value="Attendance"></a>
+             <a href=""><img src="{% static 'images/images.jpg' %}" alt=""><input type="buttom" value="Help"></a>
+         </ul>
+     </section>
+     <section class="function1">
+         <ul>
+             <a href=""><img src="{% static 'images/train.jpg' %}" alt=""><input type="buttom" value="Train Data"></a>
+             <a href=""><img src="{% static 'images/photo.jpg' %}" alt=""><input type="buttom" value="Photo"></a>
+             <a href=""><img src="{% static 'images/dev.jpg' %}" alt=""><input type="buttom" value="Developer"></a>
+             <a href=""><img src="{% static 'images/images.jpg' %}" alt=""><input type="buttom" value="Exit"></a>
+         </ul>  
+     </section>
+ </body>
+</html>
